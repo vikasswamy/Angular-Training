@@ -1,0 +1,35 @@
+<!-- <input type="text" [(ngModel)]="name">
+
+{{name}}
+
+{{title}}
+
+<p> {{name}}</p>
+<div *ngFor="let list of items">
+    {{list}}
+</div>
+
+
+<app-inline></app-inline>
+
+<app-newcomponent></app-newcomponent>
+
+<app-newinline/> -->
+
+<div class="bContainer">
+    <div class="addItem" >
+        <div><label>Add Course</label></div>
+        <input type="text" name="A" placeholder="addItem" id="value" [(ngModel)] = "name" #exampl>
+
+        <button id="button" type="submit" (click)="submitvalue()">Submit</button>
+
+        <p id="name"> </p>
+    </div>
+    <div>
+        <label >Courses</label>
+    <ul class="item" id="item" *ngFor="let listItem of items">
+        <li class="itemContent"> {{listItem}} <button class="but" (click)="removeItem(listItem)">X</button> </li>
+    </ul>
+    
+    </div>
+</div>
